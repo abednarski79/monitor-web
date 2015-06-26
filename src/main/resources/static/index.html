@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monitor</title>
+        <script src="jquery-1.11.3.min.js"></script>
+        <script src="sockjs-0.3.4.js"></script>
+        <script src="stomp.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+
+    <noscript>
+        <h2 style="color: #ff0000">
+            Seems your browser doesn't support Javascript! Websocket relies on Javascript being enabled. Please enable
+            Javascript and reload this page!
+        </h2>
+    </noscript>
+
+    <div>
+        <div>
+            <button id="connect" onclick="connect();">Connect</button>
+            <button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>
+        </div>
+        <div id="main">
+            <table border="1" style="width:100%">
+                <thead border="1">
+                    <th>Record id</th>
+                    <th>Time stamp</th>
+                    <th>Operation type</th>
+                </thead>
+                <tbody id="records">
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </body>
+</html>

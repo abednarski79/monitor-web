@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gs-messaging-stomp-websocket:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="monitor-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="gs-messaging-stomp-websocket:war exploded" />
+    </root>
+  </artifact>
+</component>
