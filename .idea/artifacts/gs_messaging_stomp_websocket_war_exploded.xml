@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="gs-messaging-stomp-websocket" />
+          <element id="module-output" name="monitor-web" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-websocket:1.2.4.RELEASE" />
@@ -41,8 +41,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.1.6.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.1.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.2.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:1.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: eu.appbucket.monitor.shared:monitor-shared:1.0-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org.apache.activemq:activemq-client:5.10.2" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.12" />
@@ -59,7 +57,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="gs-messaging-stomp-websocket/web/Web" />
+      <element id="javaee-facet-resources" facet="monitor-web/web/Web" />
     </root>
   </artifact>
 </component>

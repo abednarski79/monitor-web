@@ -10,19 +10,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-// TODO : add unit test
-
 @RestController
 public class ManifestVersionController {
 
     private static final Logger logger = LoggerFactory.getLogger(ManifestVersionController.class);
     private ManifestDetails manifestDetails;
 
-    public ManifestVersionController() throws  Exception {
+    public ManifestVersionController() {
         manifestDetails = loadManifestDetails();
     }
 
-    private ManifestDetails loadManifestDetails() {
+    protected ManifestDetails loadManifestDetails() {
         ManifestDetails manifestDetails = new ManifestDetails();
         InputStream manifestData = ManifestVersionController.class.getResourceAsStream("/META-INF/MANIFEST.MF");
         Properties manifestProperties = new Properties();
